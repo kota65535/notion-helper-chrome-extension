@@ -1,0 +1,32 @@
+{
+  "name": "Notion Helper",
+  "action": {
+    "default_title": "Settings",
+    "default_popup": "popup.html"
+  },
+  "manifest_version": 3,
+  "version": "0.0.1",
+  "description": "Notion helper",
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.notion.so/*"
+      ],
+      "run_at": "document_end",
+      "all_frames": true,
+      "js": [
+        "main.js"
+      ]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "128": "icon.png"
+  }
+}

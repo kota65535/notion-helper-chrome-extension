@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Settings</title>
+  <style>
+    body {
+      width: 300px;
+    }
+
+    div.header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    div.entry {
+      display: flex;
+      align-items: center;
+      margin: 10px;
+    }
+
+    div.main input {
+      width: 30px;
+    }
+
+    label {
+      display: block;
+    }
+  </style>
+  <script src="popup.js"></script>
+</head>
+<body>
+<div class="header">Settings</div>
+<div class="main">
+  <div class="entry">
+    <input type="checkbox" name="openSubpageTree" id="openSubpageTree">
+    <label for="openSubpageTree">
+      Open subpage tree when page clicked
+    </label>
+  </div>
+  <div class="entry">
+    <input type="checkbox" name="hideNoPagesInside" id="hideNoPagesInside">
+    <label for="hideNoPagesInside">
+      Hide "No pages inside"
+    </label>
+  </div>
+</div>
+</body>
+</html>
